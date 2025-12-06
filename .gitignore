@@ -1,0 +1,83 @@
+# --------------------------
+# PYTHON CACHE & TEMP FILES
+# --------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --------------------------
+# VENV / ENVIRONMENTS
+# --------------------------
+env/
+venv/
+.venv/
+
+# --------------------------
+# OS FILES
+# --------------------------
+.DS_Store
+Thumbs.db
+
+# --------------------------
+# FASTF1 CACHE
+# --------------------------
+fastf1_cache/
+
+# --------------------------
+# NOTEBOOKS & TEMP ANALYSIS FILES
+# --------------------------
+*.ipynb
+*.ipynb_checkpoints/
+
+# --------------------------
+# IGNORE ALL DATA FILES EXCEPT FINAL TRAINING OUTPUT
+# --------------------------
+data/
+!data/training_fp2_sprint_2024_2025.csv
+!data/processed_dataset.csv
+!data/training_preprocessed.csv
+
+# If you want to keep only the final training dataset, use:
+# data/*
+# !data/training_preprocessed.csv
+
+# --------------------------
+# IGNORE ALL MODELS EXCEPT FINAL ONE
+# --------------------------
+models/
+!models/model_fp2_sprint_xgb.joblib
+
+# --------------------------
+# SCRIPTS YOU WANT TO IGNORE (OLD / UNUSED)
+# --------------------------
+scripts/build_dataset.py
+scripts/build_pairwise.py
+scripts/finalize_dataset.py
+scripts/predict.py
+scripts/predict_ensemble.py
+scripts/predict_race.py
+scripts/predict_pairwise.py
+scripts/predict_core.py
+scripts/train_model.py
+scripts/train_pairwise_ranker.py
+scripts/simulate_race.py
+scripts/input_data.py
+
+# KEEP ONLY THE FINAL WORKING SCRIPTS:
+!scripts/build_dataset_with_fp2.py
+!scripts/data_preprocessing.py
+!scripts/train_fp2_sprint_model.py
+!scripts/predict_with_fp2.py
+
+# --------------------------
+# APP / UI FILES (IGNORE IF NOT USING)
+# --------------------------
+app.py
+.streamlit/
+
+# --------------------------
+# LOG FILES
+# --------------------------
+*.log
+logs/
