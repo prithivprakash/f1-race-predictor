@@ -54,35 +54,6 @@ Run one script and instantly get:
 - Explanation of top driver  
 - Full FP2/Sprint pace diagnostics  
 
----
-
-## 📁 Project Structure
-
-```
-
-f1-race-predictor/
-│
-├── data/
-│   ├── training_fp2_sprint_2024_2025.csv
-│   └── training_preprocessed.csv
-│
-├── models/
-│   └── model_fp2_sprint_xgb.joblib
-│
-├── scripts/
-│   ├── build_dataset_with_fp2.py
-│   ├── data_preprocessing.py
-│   ├── train_fp2_sprint_model.py
-│   └── predict_with_fp2.py
-│
-├── fastf1_cache/      # auto-created (ignored in git)
-├── requirements.txt
-└── README.md
-
-````
-
----
-
 ## 🛠 Installation
 
 ### 1. Create virtual environment (optional)
